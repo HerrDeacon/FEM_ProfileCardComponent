@@ -117,11 +117,18 @@ body {
     background-color: var(--white);
     border-radius: 15px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-image: url(../images/bg-pattern-card.svg);
+    overflow: hidden;
 }
   .card-profile .top-section {
     min-height: 14.0rem;
-    background-image: url(../images/bg-pattern-card.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 60px;
   }
   .card-profile img {
       border: 5px solid var(--white);
@@ -129,29 +136,31 @@ body {
       margin: 2.0rem auto;
   }
   .card-profile-details {
-      color: var(--dark-gray);
-  }
-  .card-profile-details .name {
-      color: var(--very-dark-desaturated-blue);
-      font-weight: var(--fw-700);
-      margin-bottom: 0.7rem;
-  }
-  .card-profile-details .name > span {
     color: var(--dark-gray);
-    font-weight: var(--fw-400);
-    padding-left: 0.5rem;
+    background-color: var(--white);
+    padding-bottom: 20px;
   }
-  .card-profile-details .location {
-      font-size: 1.4rem;
-  }
-
-    .card-profile-stats {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        padding: 22px 0;
-        border-top: 1px solid var(--dark-gray-faded);
+    .card-profile-details .name {
+        color: var(--very-dark-desaturated-blue);
+        font-weight: var(--fw-700);
+        margin-bottom: 0.7rem;
     }
+    .card-profile-details .name > span {
+      color: var(--dark-gray);
+      font-weight: var(--fw-400);
+      padding-left: 0.5rem;
+    }
+    .card-profile-details .location {
+        font-size: 1.4rem;
+    }
+
+  .card-profile-stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 22px 0;
+      border-top: 1px solid var(--dark-gray-faded);
+      background-color: var(--white);
+  }
     .stat {
         text-align: center;
     }
